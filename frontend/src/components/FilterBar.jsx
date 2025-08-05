@@ -139,8 +139,8 @@ const FilterBar = ({
             {isArabic ? 'المنطقة' : 'Region'}
           </label>
           <Select 
-            value={filters.region || ''} 
-            onValueChange={(value) => onFilterChange('region', value === '' ? null : value)}
+            value={filters.region || 'all'} 
+            onValueChange={(value) => onFilterChange('region', value === 'all' ? null : value)}
           >
             <SelectTrigger className="border-green-200 focus:border-green-500">
               <SelectValue 
