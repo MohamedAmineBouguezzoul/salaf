@@ -149,7 +149,7 @@ const FilterBar = ({
               />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">{isArabic ? 'كل المناطق' : 'All Regions'}</SelectItem>
+              <SelectItem value="all">{isArabic ? 'كل المناطق' : 'All Regions'}</SelectItem>
               {regions.map(region => (
                 <SelectItem key={region.value} value={region.value}>
                   <span style={{ fontFamily: 'Amiri, serif' }}>
