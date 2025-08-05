@@ -77,8 +77,8 @@ const FilterBar = ({
             {isArabic ? 'القرن' : 'Century'}
           </label>
           <Select 
-            value={filters.century || ''} 
-            onValueChange={(value) => onFilterChange('century', value === '' ? null : value)}
+            value={filters.century || 'all'} 
+            onValueChange={(value) => onFilterChange('century', value === 'all' ? null : value)}
           >
             <SelectTrigger className="border-green-200 focus:border-green-500">
               <SelectValue 
