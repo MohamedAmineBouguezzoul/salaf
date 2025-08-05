@@ -108,8 +108,8 @@ const FilterBar = ({
             {isArabic ? 'المذهب' : 'Madhhab'}
           </label>
           <Select 
-            value={filters.madhhab || ''} 
-            onValueChange={(value) => onFilterChange('madhhab', value === '' ? null : value)}
+            value={filters.madhhab || 'all'} 
+            onValueChange={(value) => onFilterChange('madhhab', value === 'all' ? null : value)}
           >
             <SelectTrigger className="border-green-200 focus:border-green-500">
               <SelectValue 
