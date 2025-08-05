@@ -118,7 +118,7 @@ const FilterBar = ({
               />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">{isArabic ? 'كل المذاهب' : 'All Madhabs'}</SelectItem>
+              <SelectItem value="all">{isArabic ? 'كل المذاهب' : 'All Madhabs'}</SelectItem>
               {madhabs.map(madhhab => (
                 <SelectItem key={madhhab.value} value={madhhab.value}>
                   <span style={{ fontFamily: 'Amiri, serif' }}>
